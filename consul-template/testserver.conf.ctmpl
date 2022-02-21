@@ -1,0 +1,14 @@
+upstream testserver {
+{{ range service "testserver" }}
+    server {{ .Address }}:{{ .Port }};
+{{ end }}
+}
+
+server {
+    listen 8080;
+    server_name localhost;
+
+    location / {
+        proxy_pass http://testserver;
+    }
+}

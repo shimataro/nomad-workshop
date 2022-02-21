@@ -1,6 +1,8 @@
-# Dockerイメージの作成
+# Dockerイメージの作成＆登録
 
 テスト用の簡単なウェブサーバーを `docker` ディレクトリーにしているので、これを使ってイメージを作成します。
+
+## イメージ作成
 
 ```bash
 cd docker
@@ -21,6 +23,8 @@ curl http://localhost:3000
 docker stop testcontainer
 docker rm testcontainer
 ```
+
+## GitHub Container Registryに登録
 
 作ったイメージをGitHub Container Registryにpushします。
 
