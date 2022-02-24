@@ -10,6 +10,10 @@ sudo apt update
 
 # Nomad / Consul / Consul Templateをインストール
 sudo apt install nomad consul consul-template
+
+# 補完を有効化
+nomad -autocomplete-install
+consul -autocomplete-install
 ```
 
 ```bash
