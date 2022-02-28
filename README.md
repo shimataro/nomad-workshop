@@ -15,8 +15,13 @@ VirtualBoxで仮想マシンを作成するとやり直しができて簡単で�
 
 ## 手順
 
-1. [GitHub Container Registryの利用準備](1-prepare-ghcr.md)
-1. [Dockerイメージの作成](2-create-docker-image.md)
-1. [Nomadセットアップ](3-setup-nomad.md)
-1. [Consul Templateでリバースプロキシー](4-consul-template.md)
-1. [新バージョンのデプロイ](5-update-image.md)
+### 準備
+
+1. [GitHub Container Registryの利用準備](0-1-prepare-ghcr.md)
+1. [Dockerイメージの作成](0-2-create-docker-image.md)
+
+### とりあえず雰囲気を掴んでみる
+
+1. [Nomadセットアップ](1-1-setup-nomad.md)
+1. [Consul Templateでリバースプロキシー](1-2-consul-template.md)
+1. [新バージョンのデプロイ](1-3-update-image.md)
