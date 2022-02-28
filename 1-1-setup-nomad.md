@@ -50,5 +50,8 @@ Nomad起動後に<http://192.168.56.101:4646>にアクセスすると、Nomadの
 ### Consul起動
 
 ```bash
-sudo -u consul consul agent -dev
+sudo -u consul consul agent -dev -bind 192.168.56.101
 ```
+<!--
+Consul起動後に<http://192.168.56.101:8500>にアクセスすると、ConsulのWebUIが表示されます。
+-->
